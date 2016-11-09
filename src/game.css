@@ -1,0 +1,743 @@
+body:local(.className) {
+  width:100%;
+  height:100%;
+}
+
+:local(.className) {
+  section.solomki-wrapper {
+    display:block;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    /*background: url(images/game/table-full.jpg) no-repeat scroll center top #FFFFFF;*/
+    height: 100%;
+    margin: 0;
+    min-height: 714px;
+    padding: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  header, nav, section, article, aside, footer {
+    display: block;
+  }
+
+  a {
+    color: blue;
+    outline: none;
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  p {
+    margin: 0 0 18px
+  }
+  img {
+    border: none;
+  }
+  input {
+    vertical-align: middle;
+  }
+
+
+
+  #game {
+    /*background: url("images/game/table-full.jpg") no-repeat scroll center top #FFFFFF;*/
+      height: 100%;
+      margin: 0;
+      min-height: 714px;
+      padding: 0;
+  }
+  .game {
+    position: relative;
+    min-height: 100%;
+    background: url("images/game/ontable.png") 50% 90px no-repeat;
+  }
+  .ontable {
+    min-width: 1001px;
+    max-width: 1010px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+    z-index: 2;
+  }
+  #game .search-form-promo {
+    display: inline-block;
+      margin: 0;
+      position: absolute;
+      right: -10px;
+      top: 90px;
+      vertical-align: middle;
+  }
+
+
+  .lapa {
+      /*background: url("images/game/lapa.png") 0 0 no-repeat;*/
+      height: 263px;
+      width: 269px;
+    position: absolute;
+    bottom: -100px;
+    left: 30px;
+  }
+
+
+  /* ����� ��� �������� ����� */
+
+  .game_block {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .game_block_inner {
+    height: 100%;
+    margin: 0px auto;
+    min-width: 1001px;
+    max-width: 1010px;
+    position: relative;
+    overflow: hidden;
+  }
+  .animate_block {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    height: 77%;
+    width: 80%;
+  }
+  .game_actions {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    height: 70%;
+    width: 90%;
+  }
+  .game_title {
+    overflow: hidden;
+    text-align: center;
+  }
+  #game_rules_btn {
+    position: absolute;
+    width: 175px;
+    height: 65px;
+    background: url('images/game/rules-btn.png') 0 0 no-repeat;
+    top: 280px;
+    left: 280px;
+    cursor: pointer;
+  }
+  #game_start_btn {
+    position: absolute;
+    width: 224px;
+    height: 77px;
+    background: url('images/game/start-btn.png') 0 0 no-repeat;
+    top: 280px;
+    right: 230px;
+    cursor: pointer;
+  }
+  #refresh_btn {
+    width: 97px;
+    height: 97px;
+    margin: 0px auto;
+    background: url('images/game/replay-btn.png') 0 0 no-repeat;
+    cursor: pointer;
+  }
+  .social_block {
+    margin: 0px -5px;
+    text-align: center;
+  }
+  .social_btn {
+    width: 57px;
+    height: 57px;
+    float: left;
+    cursor: pointer;
+    margin: 0px -3px;
+  }
+  /*#social_btn1 {
+    background: url('images/game/social1.png') 0 0 no-repeat;
+    width: 62px;
+    height: 63px;
+    margin: 0px -5px -6px;
+  }*/
+  /*#social_btn2 {
+    background: url('images/game/social2.png') 0 0 no-repeat;
+  }
+  #social_btn3 {
+    background: url('images/game/social3.png') 0 0 no-repeat;
+  }
+  #social_btn4 {
+    background: url('images/game/social4.png') 0 0 no-repeat;
+  }*/
+
+  .rules_block {
+    position: relative;
+    top: -110px;
+    width: 700px;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .rules_block a {
+    position: absolute;
+    right: -20px;
+    bottom: 3px;
+  }
+
+  .game_txt_reduser {
+    width: 95px;
+    padding: 12px;
+    height: 133px;
+    position: absolute;
+    background: url('images/game/yel-desk.png') 0 0 no-repeat;
+    right: 5%;
+    top: 50px;
+  }
+  .game_txt_reduser p {
+    font-family: "JunegullRegular";
+    text-align: center;
+    font-size: 12px;
+    color: #794a00;
+    margin-bottom: 5px;
+  }
+  .game_txt_reduser p i {
+    font-style: normal;
+    font-size: 19px;
+  }
+  .game_txt_reduser .cansel_btn {
+    width: 99px;
+    height: 40px;
+    margin: 0px auto;
+    background: url('images/game/cancel-btn.png') 0 -43px no-repeat;
+    cursor: pointer;
+  }
+  .game_txt_reduser .cansel_btn:hover {
+    background: url('images/game/cancel-btn.png') 0 0 no-repeat;
+  }
+  .game_txt_reduser .ok_btn {
+    width: 110px;
+    height: 85px;
+    margin: 0px auto;
+    background: url('images/game/ok-btn.png') 0 -83px no-repeat;
+    cursor: pointer;
+  }
+  .game_txt_reduser .ok_btn:hover {
+    background: url('images/game/ok-btn.png') 0 0 no-repeat;
+  }
+
+  /* ����� ��� �������� ����� */
+
+
+  /* ����� ��� �������� ������� */
+  .section_block {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .section_block_list {
+    height: 100%;
+    margin: 0px auto;
+    min-width: 1001px;
+    max-width: 1010px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ����� ��� �������� ��������� �������� */
+  #treats_generator_block {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+    /*background: url('images/treats/treats_generator.png') 50% 100% no-repeat;*/
+  }
+  .treats_generator_reduser {
+    width: 745px;
+    height: 436px;
+    position: absolute;
+    bottom: 115px;
+  }
+  .treats_generator_reduser_inner {
+    width: 743px;
+    height: 416px;
+    padding: 20px 0px 0px;
+    position: relative;
+    margin-left: 3px;
+  }
+  .treats_close {
+    position: absolute;
+    right: 0px;
+    top: 1px;
+    cursor: pointer;
+  }
+  .treats_dish {
+    /*background: url('images/treats/treats-dish-bg.png') 0 0 no-repeat;*/
+    width: 705px;
+    height: 130px;
+    margin: 0px auto;
+    padding-top: 22px;
+    position: relative;
+  }
+  .treats_dish_nav {
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    left: 0px;
+    top: 65px;
+  }
+  .treats_dish_nav_prev {
+    position: absolute;
+    left: -13px;
+    top: 0px;
+    cursor: pointer;
+  }
+  .treats_dish_nav_next {
+    right: -23px;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+  }
+  .treats_dish_list {
+    width: 655px;
+    margin: 0px auto;
+    padding: 2px 0px 0px 7px;
+    height: 73px;
+    text-align: center;
+    position: relative;
+  }
+  .treats_dish_item {
+    float: left;
+    margin: 0px -3px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    width: 108px;
+    height: 66px;
+    padding: 6px 0px 0px 7px;
+    /*background: url('images/treats/dish.png') 0 0 no-repeat;*/
+    text-align: left;
+  }
+  .treats_dish_item_name {
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    width: 84%;
+    text-align: center;
+    font-family: "JunegullRegular";
+    font-size: 10px;
+    line-height: 13px;
+    color: #2c4c82;
+    cursor: pointer;
+    padding: 0px 8%;
+  }
+  .treats_dish_item_name:first-letter {
+    font-family: "JunegullRegular";
+    font-size: 13px;
+  }
+  .treats_action_block {
+    position: relative;
+
+  }
+  .treats_txt_block {
+    position: absolute;
+    left: 37px;
+    top: -10px;
+    width: 105px;
+    height: 120px;
+    padding: 56px 21px 20px 10px;
+    /*background: url('images/treats/recept-bg.png') 0 100% no-repeat;*/
+  }
+  .treats_txt_block_scroll {
+    width: 1px;
+    height: 90%;
+    position: absolute;
+    right: 10px;
+    top: 5%;
+    background: #4568ac;
+    z-index: 3;
+  }
+  .treats_txt_block_scroll div {
+    width: 18px;
+    height: 33px;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    /*background: url('images/treats/scroll.png') 0 100% no-repeat;*/
+    cursor: pointer;
+  }
+  .treats_txt_block_head {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 84%;
+    padding: 0px 12% 0px 4%;
+    color: #2c4c82;
+    stext-shadow: 2px 0 1px #FFFFFF, -2px 0 1px #FFFFFF, 0 2px 1px #FFFFFF, 0 -2px 1px #FFFFFF, 3px 3px 10px #000000;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-family: "JunegullRegular";
+    z-index: 2;
+  }
+  .treats_txt_block_head_tl {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 84%;
+    padding: 0px 12% 0px 4%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-family: "JunegullRegular";
+    z-index: 1;
+  }
+  .treats_txt_block_head_tr {
+    position: absolute;
+    top: -1px;
+    left: 1px;
+    width: 84%;
+    padding: 0px 12% 0px 4%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-family: "JunegullRegular";
+    z-index: 1;
+  }
+  .treats_txt_block_head_br {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 84%;
+    padding: 0px 12% 0px 4%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-family: "JunegullRegular";
+    z-index: 1;
+  }
+  .treats_txt_block_head_bl {
+    position: absolute;
+    top: 1px;
+    left: -1px;
+    width: 84%;
+    padding: 0px 12% 0px 4%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-family: "JunegullRegular";
+    z-index: 1;
+  }
+  table.full {
+  	width:100%;
+  	height:80px;
+  	vertical-align:center;
+
+  }
+
+  #root {
+
+  }
+
+  #footer {
+  	z-index:200;
+  }
+
+  #game_rules_btn {
+  	left:180px;
+  }
+
+  #game_start_btn {
+  	right:180px;
+  }
+
+  .solomki-paper-container {
+      border: medium none;
+      display: none;
+      height: 100%;
+      position: absolute;
+      top: 150px;
+      width: 710px;
+  }
+  #button {
+  	margin:50px auto 0 auto;
+  	width:200px;
+  	height:50px;
+  	text-align:center;
+  }
+
+  .solomka {
+  	cursor:pointer;
+  }
+
+  #NPC_gamebar {
+  	display:none;
+  	heigth:1px;
+  	width:100%;
+  	overflow:visible;
+  }
+
+  #game_actions {
+  	overflow:visible;
+  	height:100%;
+  	left:10%;
+  	bottom: 0;
+  	top:200px;
+      position: absolute;
+      width: 80%;
+  }
+
+  /*
+  	����� ��� ������� ������
+  */
+  #game_scoretable {
+  	position:absolute;
+  	top:0px;
+  	left:100%;
+
+  	z-index:50;
+
+  }
+
+  #game_scoretable_wrapper {
+      background: url("images/game/yel-desk.png") no-repeat scroll 0 0 transparent;
+      height: 133px;
+      padding: 12px;
+      position: absolute;
+      right: -25px;
+      width: 95px;
+  }
+
+  #game_scoretable_wrapper p {
+      color: #794A00;
+      font-family: "JunegullRegular";
+      font-size: 12px;
+      margin-bottom: 5px;
+      text-align: center;
+  }
+
+  #game_scoretable_wrapper .ok_btn {
+      background: url("images/game/ok-btn.png") no-repeat scroll 0 -83px transparent;
+      cursor: pointer;
+      height: 85px;
+      margin: 0 auto;
+      width: 110px;
+  }
+
+  #game_scoretable_wrapper .cansel_btn {
+      background: url("images/game/cancel-btn.png") no-repeat scroll 0 -43px transparent;
+      cursor: pointer;
+      height: 40px;
+      margin: 0 auto;
+      width: 99px;
+  }
+
+  #game_scoretable_wrapper p i {
+      font-size: 19px;
+      font-style: normal;
+  }
+
+  /* GAME SOCIAL WRAPPER */
+  #game_socialtable_wrapper {
+
+      height: 133px !important;
+      padding: 12px !important;
+      position: absolute !important;
+      right: -25px !important;
+      width: 95px !important;
+  }
+
+  #game_repeatdialog_wrapper {
+  	height: 133px !important;
+  	padding: 12px !important;
+  	position: absolute !important;
+  	right: -25px !important;
+  	width: 95px !important;
+  }
+
+  .game_pc {
+  	display:none;
+  }
+
+  .game_npc {
+  	display:none;
+  }
+
+  #monolog {
+  	z-index:201;
+  	left: 30%;
+  	bottom: 237px;
+  	width:1px;
+  	height:1px;
+  	overflow:visible;
+  	position:fixed;
+  	opacity:0;
+  	display:none;
+  }
+
+  #monologWrapper {
+  	width:300px;
+  	height:191px;
+  	background: url("images/monolog.png") no-repeat scroll 0 0 transparent;
+  }
+
+  #monoSpace {
+  	width:218px;
+  	height:84px;
+  	vertical-align:middle;
+  	padding:37px 0 0 34px;
+  	text-align:center;
+  	display:table;
+  }
+
+  #monoSpace span {
+  	vertical-align:middle;
+  	text-align:center;
+  	width:100%;
+  	color: #794A00;
+      font-family: "JunegullRegular";
+      font-size: 12px;
+  	display:table-cell;
+  	opacity:0;
+  }
+
+  #monoSpace span i {
+      font-size: 19px;
+      font-style: normal;
+  }
+
+  #hand {
+  	z-index:100;
+  	left: -300px;
+  	top:600px;
+  	width:1px;
+  	height:1px;
+  	overflow:visible;
+  	position:fixed;
+  	display:none;
+  }
+
+  .hand {
+  	background: url("images/hand.png") no-repeat scroll 0 0 transparent;
+      height: 771px;
+      width: 411px;
+  }
+
+
+
+  /*
+  	�������� � ����� ������
+  */
+
+  #game_start {
+  	bottom:250px;
+  	position:absolute;
+  	display:none;
+  }
+
+  #game_restarter {
+  	display:block;
+  }
+
+  #game_title {
+  	margin:0 0 0 -100px;
+  }
+
+  .rules_block {
+  	top:0px;
+  }
+
+  .game_process {
+  	display:none;
+  }
+
+
+  /************************POPUP окна авторизации**************************/
+  .hidden {
+      display: none;
+  }
+
+  .popup-form-title {
+      color: #486ab0;
+      font-family: "JunegullRegular";
+      font-size: 22px;
+      display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;
+      vertical-align: middle;
+      text-shadow: #ffc422 0px 1px 1px;
+      margin: 0px 0 0 0px;
+      padding: 0 0 0 0px;
+  }
+
+  /*.popup-form {
+      background: url(images/popup/popup-top.png) no-repeat left top;
+      padding: 14px 0 0 0;
+      width: 828px;
+  }
+  .popup-form-wrapper {
+      background: url(images/popup/popup-bottom.png) no-repeat left bottom;
+      padding: 0 0 66px 0;
+      width: auto;
+  }
+  .popup-form-wrapper>.popup-form-wrapper {
+      background: url(images/popup/popup-center.png) repeat-y left top;
+      padding: 20px 0 0 43px;
+  }*/
+  .left-part-form {
+      width: 280px;
+      border-right: 1px solid #cac7c4;
+      float: left;
+  }
+  .right-part-form {
+      float: left;
+      margin: 0 0 0 65px;
+  }
+
+  .likeImage {
+    display:inline-block;
+    background-position:top left;
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    &.imagesGameTitle {
+      background-image:url(images/game/title.png);
+      width:884px;
+      height:358px;
+    }
+    &.imagesGameLost {
+      background-image:url(images/game/lost.png);
+      width:588px;
+      height:205px;
+    }
+    &.imagesGameWin {
+      background-image:url(images/game/win.png);
+      width:588px;
+      height:205px;
+    }
+    &.imagesGameSolomki {
+      background-image:url(images/game/solomki.png);
+      width:802px;
+      height:50px;
+    }
+    &.imagesGameRulesBlock {
+      background-image:url(images/game/rules-block.png);
+      width:699px;
+      height:228px;
+    }
+    &.imagesGameGo {
+      background-image:url(images/game/go.png);
+      width:218px;
+      height:97px;
+    }
+  }
+}
